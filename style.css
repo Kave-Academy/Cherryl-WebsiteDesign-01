@@ -241,6 +241,23 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 250px;
+  height: 230px;
+}
+
+#last2nd h5 {
+  padding-top: 30px;
+  color: white;
+  font-size: 20px;
+}
+
+#last2nd p {
+  font-size: 20px;
+  color: white;
 }
 /* End of 2nd page design */
+
+/* DavidJohnson */
+#davidjohnson {
+  padding: 5rem;
+  font-size: 20px;
+}
