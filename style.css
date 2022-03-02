@@ -203,6 +203,10 @@
 /* End of Main Section */
 
 /* 3 images/row column */
+#yourtext {
+  padding: 2.5rem 0 10rem 1rem;
+  position: relative;
+}
 
 .yourText {
   text-decoration: none;
@@ -468,7 +472,6 @@
 ion-icon {
   font-size: 40px;
   color: white;
-  padding-top: 50px;
 }
 
 #socialMedia h5 {
