@@ -12,15 +12,6 @@
 
 /* Main Section */
 
-.main {
-  position: relative;
-  background: url(/images/img1.jpg);
-  min-height: 100vh;
-  background-size: cover;
-  background-position: contain;
-  padding: 250px;
-}
-
 #summerpop {
   padding-top: 15%;
   text-align: right;
