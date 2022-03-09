@@ -13,7 +13,7 @@
 /* Main Section */
 
 #summerpop {
-  padding-top: 15%;
+  padding-top: 25%;
   text-align: right;
 }
 
@@ -22,6 +22,7 @@
   color: white;
   text-transform: uppercase;
   font-weight: bold;
+  z-index: 1;
 }
 
 #summerpop p {
@@ -112,8 +113,8 @@
 .style8 {
   transform: rotate(90deg);
   height: 174px;
-  bottom: 6.5rem;
-  left: 58rem;
+  bottom: 5rem;
+  left: 65rem;
   position: absolute;
 }
 
@@ -159,9 +160,10 @@
 
 .style14 {
   transform: rotate(90deg);
+  z-index: 1;
   height: 80px;
-  top: 15rem;
-  right: 29rem;
+  top: 14rem;
+  right: 31rem;
   position: absolute;
 }
 
@@ -293,13 +295,11 @@
 }
 
 .here {
-  position: absolute;
-  top: 34rem;
-  right: -30%;
   text-decoration: none;
+  outline-style: solid;
+  padding: 10px 70px;
   border-radius: 30px;
   background: white;
-  padding: 15px 70px;
   color: rgb(221, 97, 167);
   font-size: 20px;
   text-transform: uppercase;
@@ -344,50 +344,27 @@
   position: relative;
 }
 
-.obj1 {
-  position: absolute;
-  left: 52rem;
-  top: 29rem;
-  z-index: -1;
-  height: 125px;
-  width: 220px;
-}
-
-.obj2 {
-  position: absolute;
-  transform: rotate(90deg);
-  right: 26rem;
-  z-index: -1;
-  top: 26.5rem;
-  width: 85px;
-  height: 74px;
-}
-
-.obj3 {
-  position: absolute;
-  transform: rotate(90deg);
-  right: 12rem;
-  bottom: 24rem;
-  width: 324px;
-  height: 303px;
-  z-index: -1;
+.img fluid {
+  z-index: 1;
+  top: 5rem;
 }
 
 .obj4 {
   position: absolute;
   transform: rotate(90deg);
   left: 30rem;
-  top: 21.8rem;
+  top: 25.8rem;
   z-index: -1;
   width: 250px;
+  max-width: 250px;
   height: 293px;
 }
 
 .obj5 {
   position: absolute;
   transform: rotate(270deg);
-  left: 22.5rem;
-  bottom: 32rem;
+  left: 20.5rem;
+  bottom: 40rem;
   width: 190px;
   height: 353px;
   z-index: -1;
@@ -458,14 +435,13 @@ ion-icon {
 /* `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 768px) {
   .masthead {
+    position: relative;
     min-height: 50vh;
+    background-size: cover;
   }
-  button .navbar-toggle {
-    size: 12px;
-  }
-
   .nav-items {
     font-size: 12px;
+    padding: 0 5px;
     text-transform: uppercase;
   }
 
@@ -473,7 +449,8 @@ ion-icon {
 
   #summerpop {
     text-align: right;
-    padding-top: 10px;
+    padding-top: 5rem;
+    position: relative;
   }
 
   #summerpop h2 {
@@ -485,15 +462,15 @@ ion-icon {
 
   #summerpop p {
     margin: 2px;
-    padding: 15px 0;
-    font-size: 12px;
+    padding: 5px 0;
+    font-size: 13px;
     color: white;
   }
 
   .readMore {
     text-decoration: none;
     outline-style: solid;
-    padding: 5px 10px;
+    padding: 5px 20px;
     color: white;
     font-size: 12px;
     text-transform: uppercase;
@@ -503,5 +480,266 @@ ion-icon {
   .readMore:hover {
     color: orange;
     outline-color: orange;
+  }
+  /* Objects for MainPage*/
+
+  #objectMain .container {
+    position: relative;
+  }
+
+  .style1 {
+    transform: rotate(90deg);
+    width: 20px;
+    height: 20px;
+    top: 3.5rem;
+    left: 13rem;
+    filter: grayscale(50%);
+    position: absolute;
+  }
+
+  .style3 {
+    transform: rotate(280deg);
+    width: 20px;
+    height: 20px;
+    left: 2.5rem;
+    bottom: 7rem;
+    position: absolute;
+  }
+
+  .style4 {
+    transform: rotate(280deg);
+    width: 20px;
+    height: 20px;
+    right: 1rem;
+    bottom: 3.5rem;
+    filter: grayscale(50%);
+    position: absolute;
+  }
+
+  .style5 {
+    transform: rotate(270deg);
+    height: 20px;
+    top: 5rem;
+    left: 25rem;
+    position: absolute;
+  }
+
+  .style6 {
+    transform: rotate(270deg);
+    height: 20px;
+    bottom: 4rem;
+    left: 15.5rem;
+    position: absolute;
+  }
+
+  .style7 {
+    transform: rotate(278deg);
+    height: 80px;
+    top: 4.5rem;
+    left: 12rem;
+    position: absolute;
+  }
+
+  .style8 {
+    transform: rotate(90deg);
+    height: 80px;
+    bottom: 4rem;
+    left: 21rem;
+    position: absolute;
+  }
+
+  .style9 {
+    transform: rotate(90deg);
+    height: 60px;
+    top: 4rem;
+    left: 1rem;
+    position: absolute;
+  }
+
+  .style11 {
+    transform: rotate(270deg);
+    height: 80px;
+    left: 4rem;
+    bottom: 4rem;
+    position: absolute;
+  }
+
+  .style13 {
+    transform: rotate(90deg);
+    height: 35px;
+    bottom: 6rem;
+    left: 9.5rem;
+    position: absolute;
+  }
+
+  .style12,
+  .style2,
+  .style14,
+  .style10 {
+    display: none;
+  }
+
+  /* Who Are We section */
+  #sameObject {
+    position: relative;
+    padding: 4rem 4rem 3rem 4rem;
+  }
+
+  #sameObject h2 {
+    font-size: 17px;
+    padding-top: 0;
+  }
+
+  #sameObject p {
+    font-size: 13px;
+    padding: 1rem 0;
+    margin: 0;
+  }
+
+  .triangle {
+    height: 130px;
+    position: absolute;
+    left: 2rem;
+    top: 3rem;
+    z-index: -1;
+  }
+  .circle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 5rem;
+    top: 3rem;
+  }
+  .spiral {
+    position: absolute;
+    height: 80px;
+    top: 1rem;
+    right: 2rem;
+  }
+  /* page 1 - last page */
+  #last {
+    position: relative;
+    background: url(/images/img22.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+  }
+
+  #lastPage h5 {
+    font-size: 20px;
+  }
+
+  #lastPage p {
+    font-size: 15px;
+  }
+
+  .palm1,
+  .palm2,
+  .palm3,
+  .palm4 {
+    display: none;
+  }
+  /* End of page 1 - last page */
+
+  /* Second Page */
+  .secondpage {
+    position: relative;
+    min-height: 50vh;
+    background-size: cover;
+  }
+
+  .here {
+    text-decoration: none;
+    outline-style: solid;
+    padding: 5px 30px;
+    border-radius: 30px;
+    background: white;
+    color: rgb(221, 97, 167);
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .here:hover {
+    color: orange;
+    outline-color: orange;
+  }
+  /* Objects - 2nd Group in SecondPage */
+  #obj {
+    position: relative;
+  }
+
+  .obj4 {
+    width: 130px;
+    height: 183px;
+    left: 5rem;
+    position: absolute;
+    top: 66rem;
+  }
+
+  .obj5 {
+    position: absolute;
+    transform: rotate(362deg);
+    right: 0;
+    bottom: 46.5rem;
+    width: 90px;
+    height: 153px;
+    z-index: -1;
+  }
+
+  /* last second page */
+  #last2nd {
+    position: relative;
+    background: url(/images/img22.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+  }
+  #last2nd h5 {
+    padding-top: 10px;
+    color: white;
+    font-size: 20px;
+    align-self: center;
+    text-align: center;
+  }
+
+  #last2nd p {
+    font-size: 14px;
+    color: white;
+    align-self: center;
+    text-align: center;
+  }
+
+  #last2nd .spiral1 {
+    transform: rotate(180deg);
+    position: absolute;
+    top: 17.5rem;
+    right: 2rem;
+    height: 150px;
+    width: 130px;
+  }
+  .lastsecondpage {
+    padding-top: 5%;
+    color: white;
+  }
+
+  ion-icon {
+    font-size: 25px;
+    color: white;
+    padding-bottom: 30px;
+  }
+
+  #socialMedia h5 {
+    padding-top: 30px;
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+  }
+
+  #socialMedia p {
+    font-size: 18px;
+    padding: 0 30px 0 0;
   }
 } ;
