@@ -1,7 +1,8 @@
 .masthead {
   background-size: cover;
-  min-height: 100vh;
+  background-repeat: no-repeat;
   position: relative;
+  min-height: 100vh;
 }
 
 .nav-items {
@@ -427,13 +428,18 @@ ion-icon {
 @media (max-width: 614px) {
   .masthead {
     background-size: cover;
+    background-repeat: no-repeat;
     position: relative;
     min-height: 50vh;
-    background-repeat: no-repeat;
-    background-size: contain;
   }
+  .navbar {
+    padding-top: 1.5rem;
+  }
+
   .nav-items {
     font-size: 15px;
+    text-transform: uppercase;
+    padding-left: 50px;
   }
   .style1,
   .style2,
@@ -507,14 +513,16 @@ ion-icon {
 /* `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 768px) {
   .masthead {
-    position: relative;
-    min-height: 74vh;
     background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    min-height: 70vh;
   }
+
   .nav-items {
     font-size: 12px;
-    padding: 0 5px;
     text-transform: uppercase;
+    padding: 0 5px;
   }
 
   /* Main Section */
@@ -807,12 +815,14 @@ ion-icon {
 /* `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 992px) {
   .masthead {
-    position: relative;
-    min-height: 70vh;
     background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    min-height: 50vh;
   }
+
   .nav-items {
-    font-size: 12px;
+    font-size: 25px;
     padding: 0 5px;
     text-transform: uppercase;
   }
@@ -906,9 +916,7 @@ ion-icon {
   #summerpop p {
     font-size: 20px;
   }
-  .nav-items {
-    font-size: 20px;
-  }
+
   .readMore {
     padding: 10px 37px;
   }
@@ -990,6 +998,18 @@ ion-icon {
 
 /* `xl` applies to large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
+  .masthead {
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    min-height: 50vh;
+  }
+
+  .nav-items {
+    font-size: 30px;
+    padding: 0 24px;
+    text-transform: uppercase;
+  }
   .navbar {
     padding-top: 2.5rem;
   }
